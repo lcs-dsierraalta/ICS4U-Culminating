@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CD05BDD1283E6AA800E4E5D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD05BDD0283E6AA800E4E5D5 /* main.swift */; };
 		CD05BDDB283E6EC000E4E5D5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD05BDDA283E6EC000E4E5D5 /* Node.swift */; };
+		CD81341528451BE40007D211 /* TitlePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81341428451BE40007D211 /* TitlePageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 		CD05BDD0283E6AA800E4E5D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		CD05BDD9283E6DC500E4E5D5 /* Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input.txt; sourceTree = "<group>"; };
 		CD05BDDA283E6EC000E4E5D5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		CD81341428451BE40007D211 /* TitlePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		CD05BDCF283E6AA800E4E5D5 /* ICS4U-Culminating */ = {
 			isa = PBXGroup;
 			children = (
+				CD81341328451BC60007D211 /* Views */,
 				CD05BDD8283E6D9A00E4E5D5 /* Model */,
 				CD05BDD7283E6D8C00E4E5D5 /* Graph */,
 				CD05BDD0283E6AA800E4E5D5 /* main.swift */,
@@ -81,6 +84,14 @@
 				CD05BDDA283E6EC000E4E5D5 /* Node.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		CD81341328451BC60007D211 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD81341428451BE40007D211 /* TitlePageView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD05BDD1283E6AA800E4E5D5 /* main.swift in Sources */,
+				CD81341528451BE40007D211 /* TitlePageView.swift in Sources */,
 				CD05BDDB283E6EC000E4E5D5 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
