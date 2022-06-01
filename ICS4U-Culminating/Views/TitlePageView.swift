@@ -52,6 +52,11 @@ struct TitlePageView: View {
     
     // MARK: Functions (Do things)
     
+    func startGame() {
+            // NOTE: We can set this to whatever we want for debugging later on
+            activeNode = 1
+        }
+    
     }
 
 
