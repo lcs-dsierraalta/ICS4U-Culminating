@@ -31,11 +31,13 @@ struct NodeView: View {
                 }
                 
                 // Show the image if there is one
+
                 if let image = node.image {
                     Image(image)
                         .resizable()
                         .scaledToFit()
                     }
+
                 
                 // Show choices, when they exist
                 ForEach(node.edges, id: \.self) { currentEdge in
