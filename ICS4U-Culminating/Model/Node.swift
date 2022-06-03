@@ -15,7 +15,10 @@ struct Node: Identifiable {
 }
 
 // An empty node
-let emptyNode = Node(id: 0, paragraphs: [], image: nil, edges: [])
+let emptyNode = Node(id: 0,
+                     paragraphs: [],
+                     image: nil,
+                     edges: [])
 
 struct Edge: Hashable {
     let destinationId: Int
@@ -41,8 +44,10 @@ let storyNodes: [Int : Node] = [
          Edge(destinationId: 10,
               prompt: "*Refuse meal*")]),
     
-    2 : Node(id: <#T##Int#>,
-             paragraphs: <#T##[String]#>,
+    2 : Node(id: 2,
+             paragraphs: ["You committed to trying to escape because this may be the only chance you get.",
+                         
+                         "In a split-second, you come up with two ideas, one more aggressive than the other."],
              image: <#T##String?#>, edges: <#T##[Edge]#>)
     
 ]
