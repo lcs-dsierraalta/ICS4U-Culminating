@@ -117,9 +117,13 @@
 		CDEE59A22847AD2B001BF6E1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				CDEE59A32847AD2B001BF6E1 /* iOSApp.swift */,
 				CD81341328451BC60007D211 /* Views */,
 				CD05BDD8283E6D9A00E4E5D5 /* Model */,
+				CDEE59A32847AD2B001BF6E1 /* iOSApp.swift */,
+
+				CD81341328451BC60007D211 /* Views */,
+				CD05BDD8283E6D9A00E4E5D5 /* Model */,
+
 				CDEE59A72847AD2C001BF6E1 /* Assets.xcassets */,
 				CDEE59A92847AD2C001BF6E1 /* Preview Content */,
 			);
