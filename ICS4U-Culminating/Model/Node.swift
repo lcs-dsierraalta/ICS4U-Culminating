@@ -17,7 +17,7 @@ struct Node: Identifiable {
 // An empty node
 let emptyNode = Node(id: 0, paragraphs: [], image: nil, edges: [])
 
-struct Edge: Hashable{
+struct Edge: Hashable {
     let destinationId: Int
     let prompt: String
 }
