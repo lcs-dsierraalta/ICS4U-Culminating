@@ -12,7 +12,6 @@
 		CD05BDDB283E6EC000E4E5D5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD05BDDA283E6EC000E4E5D5 /* Node.swift */; };
 		CD81341528451BE40007D211 /* TitlePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81341428451BE40007D211 /* TitlePageView.swift */; };
 		CDEE59A42847AD2B001BF6E1 /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE59A32847AD2B001BF6E1 /* iOSApp.swift */; };
-		CDEE59A62847AD2B001BF6E1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEE59A52847AD2B001BF6E1 /* ContentView.swift */; };
 		CDEE59A82847AD2C001BF6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEE59A72847AD2C001BF6E1 /* Assets.xcassets */; };
 		CDEE59AB2847AD2C001BF6E1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDEE59AA2847AD2C001BF6E1 /* Preview Assets.xcassets */; };
 		CDEE59AF2847AD48001BF6E1 /* TitlePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD81341428451BE40007D211 /* TitlePageView.swift */; };
@@ -41,7 +40,6 @@
 		CD81341428451BE40007D211 /* TitlePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePageView.swift; sourceTree = "<group>"; };
 		CDEE59A12847AD2B001BF6E1 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEE59A32847AD2B001BF6E1 /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
-		CDEE59A52847AD2B001BF6E1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CDEE59A72847AD2C001BF6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDEE59AA2847AD2C001BF6E1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,8 +83,6 @@
 		CD05BDCF283E6AA800E4E5D5 /* ICS4U-Culminating */ = {
 			isa = PBXGroup;
 			children = (
-				CD81341328451BC60007D211 /* Views */,
-				CD05BDD8283E6D9A00E4E5D5 /* Model */,
 				CD05BDD7283E6D8C00E4E5D5 /* Graph */,
 				CD05BDD0283E6AA800E4E5D5 /* main.swift */,
 			);
@@ -122,7 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				CDEE59A32847AD2B001BF6E1 /* iOSApp.swift */,
-				CDEE59A52847AD2B001BF6E1 /* ContentView.swift */,
+				CD81341328451BC60007D211 /* Views */,
+				CD05BDD8283E6D9A00E4E5D5 /* Model */,
 				CDEE59A72847AD2C001BF6E1 /* Assets.xcassets */,
 				CDEE59A92847AD2C001BF6E1 /* Preview Content */,
 			);
@@ -242,7 +239,6 @@
 				CDEE59B12847AD55001BF6E1 /* Node.swift in Sources */,
 				CDEE59B02847AD4F001BF6E1 /* NodeView.swift in Sources */,
 				CDEE59AF2847AD48001BF6E1 /* TitlePageView.swift in Sources */,
-				CDEE59A62847AD2B001BF6E1 /* ContentView.swift in Sources */,
 				CDEE59A42847AD2B001BF6E1 /* iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

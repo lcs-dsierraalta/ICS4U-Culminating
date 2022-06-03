@@ -37,7 +37,7 @@ let storyNodes: [Int : Node] = [
                       
                       "The guard opens the door to give you the food. You ponder why, you don't just open the door to a prisoner's cell like nothing is going to happen. But that doesn't matter right now. The door is open and you have an opening. What will you do?",
                      ],
-         image: nil,
+         image: "",
          edges: [Edge(destinationId: 2,
                       prompt: "*Attempt escape*"),
          Edge(destinationId: 3,
@@ -49,18 +49,8 @@ let storyNodes: [Int : Node] = [
              paragraphs: ["You committed to trying to escape because this may be the only chance you get.",
                          
                          "In a split-second, you come up with two ideas, one more aggressive than the other."],
-             image: <#T##String?#>, edges: <#T##[Edge]#>)
-=======
-             paragraphs: ["Recently there was a robbery at the royal bank. You single handedly managed to steal the most precious diamond in the world, but just as you were running to your getaway car, your driver left when he saw all the police cars coming. You had everything planned out, yet still failed. What a shame.",
-                          
-                          "You are taken to a maximum security prison at the peak of the highest mountain in the country.",
-                          
-                          "You are placed in a cell to rot for the rest of your life. However, there is a woman in your cell, at least you won't be alone.",
-                          
-                          "Days pass and you are ",
-                         ],
-             image: nil,
-             edges: <#T##[Edge]#>)
+             image: "",
+             edges: [Edge(destinationId: 4, prompt: "")])
 
     
 ]
