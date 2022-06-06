@@ -91,251 +91,251 @@ let storyNodes: [Int : Node] = [
              edges: [Edge(destinationId: 0, prompt: "The End.")]),
     
     
-    7 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    7 : Node(id: 7, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    8 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    8 : Node(id: 8, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    9 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    9 : Node(id: 9, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    10 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    10 : Node(id: 10, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    11 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    11 : Node(id: 11, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    12 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    12 : Node(id: 12, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    13 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    13 : Node(id: 13, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    14 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    14 : Node(id: 14, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    15 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    15 : Node(id: 15, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    16 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    16 : Node(id: 16, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    17 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    17 : Node(id: 17, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    18 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    18 : Node(id: 18, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    19 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    19 : Node(id: 19, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    20 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    20 : Node(id: 20, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    21 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    21 : Node(id: 21, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    22 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    22 : Node(id: 22, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    23 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    23 : Node(id: 23, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    24 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    24 : Node(id: 24, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    25 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    25 : Node(id: 25, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    26 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    26 : Node(id: 26, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    27 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    27 : Node(id: 27, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    28 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    28 : Node(id: 28, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    29 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    29 : Node(id: 29, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    30 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    30 : Node(id: 30, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    31 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    31 : Node(id: 31, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    32 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    32 : Node(id: 32, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    33 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    33 : Node(id: 33, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    34 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    34 : Node(id: 34, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    35 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    35 : Node(id: 35, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    36 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    36 : Node(id: 36, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    37 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    37 : Node(id: 37, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    38 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    38 : Node(id: 38, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    39 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    39 : Node(id: 39, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    40 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    40 : Node(id: 40, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    41 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    41 : Node(id: 41, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    42 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    42 : Node(id: 42, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    43 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    43 : Node(id: 43, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    44 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    44 : Node(id: 44, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    45 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    45 : Node(id: 45, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    46 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    46 : Node(id: 46, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    47 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    47 : Node(id: 47, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    48 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    48 : Node(id: 48, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    49 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    49 : Node(id: 49, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    50 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    50 : Node(id: 50, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    51 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    51 : Node(id: 51, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    52 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    52 : Node(id: 52, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    53 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    53 : Node(id: 53, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    54 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    54 : Node(id: 54, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    55 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    55 : Node(id: 55, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    56 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    56 : Node(id: 56, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    57 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    57 : Node(id: 57, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    58 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    58 : Node(id: 58, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    59 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    59 : Node(id: 59, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    60 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    60 : Node(id: 60, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    61 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    61 : Node(id: 61, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    62 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    62 : Node(id: 62, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    63 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    63 : Node(id: 63, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    64 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    64 : Node(id: 64, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    65 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    65 : Node(id: 65, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    66 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    66 : Node(id: 66, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    67 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    67 : Node(id: 67, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    68 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    68 : Node(id: 68, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    69 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    69 : Node(id: 69, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    70 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    70 : Node(id: 70, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    71 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    71 : Node(id: 71, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    72 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    72 : Node(id: 72, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    73 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    73 : Node(id: 73, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    74 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    74 : Node(id: 74, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    75 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    75 : Node(id: 75, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    76 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    76 : Node(id: 76, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    77 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    77 : Node(id: 77, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    78 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    78 : Node(id: 78, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    79 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    79 : Node(id: 79, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    80 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    80 : Node(id: 80, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    81 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    81 : Node(id: 81, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    82 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    82 : Node(id: 82, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    83 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    83 : Node(id: 83, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    84 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    84 : Node(id: 84, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    85 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    85 : Node(id: 85, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    86 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    86 : Node(id: 86, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    87 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    87 : Node(id: 87, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    88 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    88 : Node(id: 88, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    89 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    89 : Node(id: 89, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
 ]
