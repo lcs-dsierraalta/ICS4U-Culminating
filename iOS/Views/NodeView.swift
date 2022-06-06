@@ -49,7 +49,7 @@ struct NodeView: View {
                             .multilineTextAlignment(.trailing)
                             .onTapGesture {
                                 // Advance to whatever node this prompt is for
-                                
+                                activeNode = currentEdge.destinationId
                             }
                     }
                 }
