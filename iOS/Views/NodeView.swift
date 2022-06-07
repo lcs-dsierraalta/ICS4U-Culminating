@@ -23,6 +23,7 @@ struct NodeView: View {
                 // Page number
                 Text("\(node.id)")
                     .padding()
+                    
                 
                 // Iterate over all the paragraphs
                 ForEach(node.paragraphs, id: \.self) { currentParagraph in

@@ -84,9 +84,9 @@ let storyNodes: [Int : Node] = [
     6 : Node(id: 6,
              paragraphs: ["The smart option would be to give up, but your mother taught to never give up. You get back up and go in for another punch, but the guard pulls out the taser and tases you. He then proceeds to carry you out of the cell.",
                          
-                         "Your punishment is: Solitary confinement... Yayyyyyyy!",
+                        "Your punishment is: Solitary confinement... Yayyyyyyy!",
                          
-                         "Now you're beat up, in a more secure cell, and alone. How sad."],
+                        "Now you're beat up, in a more secure cell, and alone. How sad."],
              image: nil,
              edges: [Edge(destinationId: 0, prompt: "The End.")]),
     
