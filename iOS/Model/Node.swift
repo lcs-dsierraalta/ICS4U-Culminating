@@ -34,8 +34,7 @@ let storyNodes: [Int : Node] = [
                           
                           "Days pass and you are still contemplating life while staring at the massive cliff just on the other side of the window. You hear the guard coming. It's meal time, and you don't know whether to be excited or not because the food they've been serving a lot of disgusting food.",
                           
-                          "The guard opens the door to give you the food. You ponder why, you don't just open the door to a prisoner's cell like nothing is going to happen. But that doesn't matter right now. The door is open and you have an opening. What will you do?",
-                         ],
+                          "The guard opens the door to give you the food. You ponder why, you don't just open the door to a prisoner's cell like nothing is going to happen. But that doesn't matter right now. The door is open and you have an opening. What will you do?"],
              image: nil,
              edges: [Edge(destinationId: 2,
                           prompt: "*Attempt escape*"),
@@ -47,8 +46,8 @@ let storyNodes: [Int : Node] = [
     
     2 : Node(id: 2,
              paragraphs: ["You committed to trying to escape because this may be the only chance you get.",
-
-                         "In a split-second, you come up with two ideas, one more aggressive than the other."],
+                          
+                          "In a split-second, you come up with two ideas, one more aggressive than the other."],
              image: nil,
              edges: [Edge(destinationId: 4,
                           prompt: "*Tackle the guard*"),
@@ -58,43 +57,58 @@ let storyNodes: [Int : Node] = [
     
     3 : Node(id: 3,
              paragraphs: ["You decided to accept the meal instead of trying anything that could get you punished or killed, smart decision.",
-                         
-                         "The guard then leaves. As soon as he leaves you look at your food and you notice that the cutlery is made of metal.",
-                         
-                         "You then come up with two more ideas, what will you do?"],
+                          
+                          "The guard then leaves. As soon as he leaves you look at your food and you notice that the cutlery is made of metal.",
+                          
+                          "You then come up with two more ideas, what will you do?"],
              image: nil,
              edges: [Edge(destinationId: 12,
                           prompt: "*Use the knife to attempt escape*"),
                      Edge(destinationId: 13,
                           prompt: "*Fake death by eating the food*")]),
-
-
+    
+    
     4 : Node(id: 4,
              paragraphs: ["Tackle the guard! You can take him right? He doesn't look that much bigger than you, except the fact that he's almost four inches taller than you, and he's bulky. You practiced karate when you were little, finally you can use it!",
-                         
-                         "You dash at the guard to try to push him... He won't budge. You try to punch him. He blocks. Flips you and kiss the ground."],
+                          
+                          "You dash at the guard to try to push him... He won't budge. You try to punch him. He blocks. Flips you and kiss the ground."],
              image: nil,
              edges: [Edge(destinationId: 6,
                           prompt: "Continue ->")]),
     
     
-    5 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    5 : Node(id: 5, paragraphs: ["This is your chance, you run out of the cell and close the door. The alarm sounds and soon guards begin swarming the hallway.",
+                                 "You look right and there is 20 guards running at you.",
+                                 
+                                 "You look left and there is only one guard guarding the door. Where will you go?"],
+             image: nil,
+             edges: [Edge(destinationId: 7,
+                          prompt: "*Go left, play it safe*"),
+                     Edge(destinationId: 8,
+                          prompt: "*Go right, take the guards on*")]),
     
     
     6 : Node(id: 6,
              paragraphs: ["The smart option would be to give up, but your mother taught to never give up. You get back up and go in for another punch, but the guard pulls out the taser and tases you. He then proceeds to carry you out of the cell.",
-                         
-                         "Your punishment is: Solitary confinement... Yayyyyyyy!",
-                         
-                         "Now you're beat up, in a more secure cell, and alone. How sad."],
+                          
+                          "Your punishment is: Solitary confinement... Yayyyyyyy!",
+                          
+                          "Now you're beat up, in a more secure cell, and alone. How sad."],
              image: nil,
              edges: [Edge(destinationId: 0, prompt: "The End.")]),
     
     
-    7 : Node(id: 7, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    7 : Node(id: 7, paragraphs: ["You don't feel like trying to fight the guards because you're weak since you skipped PE class, so you go left and try to take on the one guard, because one is better than 20, even you can handle that."],
+             
+             image: nil,
+             edges: [Edge(destinationId: 9,
+                          prompt: "Continue ->")]),
     
     
-    8 : Node(id: 8, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    8 : Node(id: 8, paragraphs: ["You feel confident and go head on against the 20 guards. Don't worry, I'll bring flowers to your funeral",],
+             image: nil,
+             edges: [Edge(destinationId: 20,
+                          prompt: "Continue ->")]),
     
     
     9 : Node(id: 9, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
