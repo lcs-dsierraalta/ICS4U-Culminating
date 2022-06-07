@@ -52,10 +52,16 @@ struct TitlePageView: View {
                         
                     
                     Text("You will try escaping a prison by \n making your own decisions")
+                        .font(.subheadline)
                         .foregroundColor(.white)
                         .bold()
                         .multilineTextAlignment(.center)
+                        .padding(.bottom)
                         
+                     Image("prison1")
+                        .resizable()
+                        .padding([.top, .leading, .trailing])
+                        .scaledToFit()
                     
                     
                 }

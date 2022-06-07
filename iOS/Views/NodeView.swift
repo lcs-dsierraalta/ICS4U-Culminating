@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NodeView: View {
     
+    
     // MARK: Stored properties
     let node: Node
     @Binding var activeNode: Int
@@ -22,13 +23,19 @@ struct NodeView: View {
                 
                 // Page number
                 Text("\(node.id)")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
                     .padding()
-                    
+                    .onTapGesture {
+                        activeNode = 0
+                    }
                 
                 // Iterate over all the paragraphs
                 ForEach(node.paragraphs, id: \.self) { currentParagraph in
                     Text(currentParagraph)
-                        .padding()
+                        .padding(.horizontal)
+                        .padding(.bottom)
+                        .font(.custom("Baskerville", size: 24))
                 }
                 
                 // Show the image if there is one
@@ -45,13 +52,14 @@ struct NodeView: View {
                     HStack {
                         Spacer()
                         
-                        Text(currentEdge.prompt)
+                        Text(try! AttributedString(markdown: currentEdge.prompt))
                             .padding()
                             .multilineTextAlignment(.trailing)
                             .onTapGesture {
                                 // Advance to whatever node this prompt is for
                                 activeNode = currentEdge.destinationId
                             }
+                            
                     }
                 }
                 
