@@ -166,24 +166,30 @@ let storyNodes: [Int : Node] = [
               Edge(destinationId: 16, prompt: "*Play dead*")]),
     
     
-    15 : Node(id: 15, paragraphs: [""],
+    15 : Node(id: 15, paragraphs: ["You scream and start panicking, shouting at the guards to get over. You curl up in a ball and start rolling around ot make it seem like you witnessed something traumatizing."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")]),
+              edges: [Edge(destinationId: 18,
+                           prompt: "Continue ->")]),
     
     
     16 : Node(id: 16,
-              paragraphs: [""],
+              paragraphs: ["With your amazing quick thinking, you splash the woman's blood all over you and pretend that she killed you before 'commiting suicide'."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")]),
+              edges: [Edge(destinationId: 17,
+                           prompt: "Continue ->")]),
     
     
     17 : Node(id: 17,
-              paragraphs: [""],
+              paragraphs: ["The guard hasn't heard any commotion from your cell for a while, so he goes to check on you.",
+                          
+                          "He finds you and the woman on the floor covered in blood. He starts to panick and calls the other guards over.",
+                          
+                          "He then starts checking your pulse to see if you're alive. Fatal mistake, you dind't think about that, now the guard knows you're alive.",
+                          
+                          "You're done for. The guards find you guilty for murdering the woman and setence you to death... Too bad."],
               image: nil,
               edges: [Edge(destinationId: 0,
-                           prompt: "")]),
+                           prompt: "The End.")]),
     
     
     18 : Node(id: 18,
