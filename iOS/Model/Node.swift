@@ -34,8 +34,7 @@ let storyNodes: [Int : Node] = [
                           
                           "Days pass and you are still contemplating life while staring at the massive cliff just on the other side of the window. You hear the guard coming. It's meal time, and you don't know whether to be excited or not because the food they've been serving a lot of disgusting food.",
                           
-                          "The guard opens the door to give you the food. You ponder why, you don't just open the door to a prisoner's cell like nothing is going to happen. But that doesn't matter right now. The door is open and you have an opening. What will you do?",
-                         ],
+                          "The guard opens the door to give you the food. You ponder why, you don't just open the door to a prisoner's cell like nothing is going to happen. But that doesn't matter right now. The door is open and you have an opening. What will you do?"],
              image: nil,
              edges: [Edge(destinationId: 2,
                           prompt: "*Attempt escape*"),
@@ -47,8 +46,8 @@ let storyNodes: [Int : Node] = [
     
     2 : Node(id: 2,
              paragraphs: ["You committed to trying to escape because this may be the only chance you get.",
-
-                         "In a split-second, you come up with two ideas, one more aggressive than the other."],
+                          
+                          "In a split-second, you come up with two ideas, one more aggressive than the other."],
              image: nil,
              edges: [Edge(destinationId: 4,
                           prompt: "*Tackle the guard*"),
@@ -58,27 +57,35 @@ let storyNodes: [Int : Node] = [
     
     3 : Node(id: 3,
              paragraphs: ["You decided to accept the meal instead of trying anything that could get you punished or killed, smart decision.",
-                         
-                         "The guard then leaves. As soon as he leaves you look at your food and you notice that the cutlery is made of metal.",
-                         
-                         "You then come up with two more ideas, what will you do?"],
+                          
+                          "The guard then leaves. As soon as he leaves you look at your food and you notice that the cutlery is made of metal.",
+                          
+                          "You then come up with two more ideas, what will you do?"],
              image: nil,
              edges: [Edge(destinationId: 12,
                           prompt: "*Use the knife to attempt escape*"),
                      Edge(destinationId: 13,
                           prompt: "*Fake death by eating the food*")]),
-
-
+    
+    
     4 : Node(id: 4,
              paragraphs: ["Tackle the guard! You can take him right? He doesn't look that much bigger than you, except the fact that he's almost four inches taller than you, and he's bulky. You practiced karate when you were little, finally you can use it!",
-                         
-                         "You dash at the guard to try to push him... He won't budge. You try to punch him. He blocks. Flips you and kiss the ground."],
+                          
+                          "You dash at the guard to try to push him... He won't budge. You try to punch him. He blocks. Flips you and kiss the ground."],
              image: nil,
              edges: [Edge(destinationId: 6,
                           prompt: "Continue ->")]),
     
     
-    5 : Node(id: 5, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    5 : Node(id: 5, paragraphs: ["This is your chance, you run out of the cell and close the door. The alarm sounds and soon guards begin swarming the hallway.",
+                                 "You look right and there is 20 guards running at you.",
+                                 
+                                 "You look left and there is only one guard guarding the door. Where will you go?"],
+             image: nil,
+             edges: [Edge(destinationId: 7,
+                          prompt: "*Go left, play it safe*"),
+                     Edge(destinationId: 8,
+                          prompt: "*Go right, take the guards on*")]),
     
     
     6 : Node(id: 6,
@@ -91,187 +98,448 @@ let storyNodes: [Int : Node] = [
              edges: [Edge(destinationId: 0, prompt: "The End.")]),
     
     
-    7 : Node(id: 7, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    7 : Node(id: 7, paragraphs: ["You don't feel like trying to fight the guards because you're weak since you skipped PE class, so you go left and try to take on the one guard, because one is better than 20, even you can handle that."],
+             
+             image: nil,
+             edges: [Edge(destinationId: 9,
+                          prompt: "Continue ->")]),
+    
+    
+    8 : Node(id: 8, paragraphs: ["You feel confident and go head on against the 20 guards. Don't worry, I'll bring flowers to your funeral.",],
+             image: nil,
+             edges: [Edge(destinationId: 20,
+                          prompt: "Continue ->")]),
+    
+    
+    9 : Node(id: 9, paragraphs: ["As you're running towards the guard, you notice that his keys are dangling from his waist.",
+                                 
+                                 "You move quick and slam his head against the wall, that's gonna leave a mark.",
+                                 
+                                 "You take his keys and baton and go through the doorway, but don't let your guard down, the guards are still following you."],
+             image: nil,
+             edges: [Edge(destinationId: 70,
+                          prompt: "Continue ->")]),
+    
+    
+    10 : Node(id: 10, paragraphs: ["You're not hungry and refuse the meal."],
+              image: nil,
+              edges: [Edge(destinationId: 11,
+                           prompt: "Continue ->")]),
+    
+    
+    11 : Node(id: 11, paragraphs: ["The guard leaves the food anyways because he's nice. Maybe you should eat it.",
+                                   
+                                   "You're too stubborn so you don't eat. So you die from starvation... Lame."],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "The End.")]),
+    
     
+    12 : Node(id: 12, paragraphs: ["You decide to use the knife.",
+                                   
+                                   "You wait for the guard to leave.",
+                                   
+                                   "How will you use the knife?"],
+              image: nil,
+              edges: [Edge(destinationId: 14,
+                           prompt: "*Kill the woman in your cell*"),
+                      Edge(destinationId: 21,
+                           prompt: "*Wait longer to think of an idea*")]),
+    
+    
+    13 : Node(id: 13, paragraphs: ["You pretend that you're starving and immediately start devouring your food.",
+                                  
+                                   "This is the perfect oppotunity to fake your death. You pretend that you're choking and fall to the ground, this alarms the guards."],
+              image: nil,
+              edges: [Edge(destinationId: 22,
+                           prompt: "Continue ->")]),
+    
     
-    8 : Node(id: 8, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    14 : Node(id: 14, paragraphs: ["After the guard leaves, you grab the knife and stab the woman",
+                                  
+                                  "She's shocked and sad, but you pay no mind to her feelings",
+                                  
+                                  "She drops to the floor and you put the knife on her hand, making it look like suicide. What now?"],
+              image: nil,
+              edges: [Edge(destinationId: 15,
+                           prompt: "*Call the guards*"),
+              Edge(destinationId: 16, prompt: "*Play dead*")]),
     
     
-    9 : Node(id: 9, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    15 : Node(id: 15, paragraphs: ["You scream and start panicking, shouting at the guards to get over. You curl up in a ball and start rolling around ot make it seem like you witnessed something traumatizing."],
+              image: nil,
+              edges: [Edge(destinationId: 18,
+                           prompt: "Continue ->")]),
     
     
-    10 : Node(id: 10, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    16 : Node(id: 16,
+              paragraphs: ["With your amazing quick thinking, you splash the woman's blood all over you and pretend that she killed you before 'commiting suicide'."],
+              image: nil,
+              edges: [Edge(destinationId: 17,
+                           prompt: "Continue ->")]),
     
     
-    11 : Node(id: 11, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    17 : Node(id: 17,
+              paragraphs: ["The guard hasn't heard any commotion from your cell for a while, so he goes to check on you.",
+                          
+                          "He finds you and the woman on the floor covered in blood. He starts to panick and calls the other guards over.",
+                          
+                          "He then starts checking your pulse to see if you're alive. Fatal mistake, you dind't think about that, now the guard knows you're alive.",
+                          
+                          "You're done for. The guards find you guilty for murdering the woman and setence you to death... Too bad."],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "The End.")]),
     
     
-    12 : Node(id: 12, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    18 : Node(id: 18,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    13 : Node(id: 13, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    19 : Node(id: 19,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    14 : Node(id: 14, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    20 : Node(id: 20,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    15 : Node(id: 15, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    21 : Node(id: 21,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    16 : Node(id: 16, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    22 : Node(id: 22,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    17 : Node(id: 17, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    23 : Node(id: 23,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    18 : Node(id: 18, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    24 : Node(id: 24,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    19 : Node(id: 19, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    25 : Node(id: 25,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    20 : Node(id: 20, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    26 : Node(id: 26,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    21 : Node(id: 21, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    27 : Node(id: 27,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    22 : Node(id: 22, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    28 : Node(id: 28,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    23 : Node(id: 23, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    29 : Node(id: 29,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    24 : Node(id: 24, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    30 : Node(id: 30,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    25 : Node(id: 25, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    31 : Node(id: 31,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    26 : Node(id: 26, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    32 : Node(id: 32,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    27 : Node(id: 27, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    33 : Node(id: 33,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    28 : Node(id: 28, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    34 : Node(id: 34,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    29 : Node(id: 29, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    35 : Node(id: 35,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    30 : Node(id: 30, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    36 : Node(id: 36,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    31 : Node(id: 31, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    37 : Node(id: 37,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    32 : Node(id: 32, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    38 : Node(id: 38,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    33 : Node(id: 33, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    39 : Node(id: 39,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    34 : Node(id: 34, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    40 : Node(id: 40,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    35 : Node(id: 35, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    41 : Node(id: 41,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    36 : Node(id: 36, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    42 : Node(id: 42,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    37 : Node(id: 37, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    43 : Node(id: 43,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    38 : Node(id: 38, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    44 : Node(id: 44,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    39 : Node(id: 39, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    45 : Node(id: 45,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    40 : Node(id: 40, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    46 : Node(id: 46,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    41 : Node(id: 41, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    47 : Node(id: 47,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    42 : Node(id: 42, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    48 : Node(id: 48,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    43 : Node(id: 43, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    49 : Node(id: 49,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    44 : Node(id: 44, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    50 : Node(id: 50,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    45 : Node(id: 45, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    51 : Node(id: 51,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    46 : Node(id: 46, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    52 : Node(id: 52,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    47 : Node(id: 47, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    53 : Node(id: 53,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    48 : Node(id: 48, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    54 : Node(id: 54,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    49 : Node(id: 49, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    55 : Node(id: 55,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    50 : Node(id: 50, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    56 : Node(id: 56,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    51 : Node(id: 51, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    57 : Node(id: 57,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    52 : Node(id: 52, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    58 : Node(id: 58,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    53 : Node(id: 53, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    59 : Node(id: 59,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    54 : Node(id: 54, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    60 : Node(id: 60,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    55 : Node(id: 55, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    61 : Node(id: 61,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    56 : Node(id: 56, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    62 : Node(id: 62,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    57 : Node(id: 57, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    63 : Node(id: 63,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    58 : Node(id: 58, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    64 : Node(id: 64,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    59 : Node(id: 59, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    65 : Node(id: 65,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    60 : Node(id: 60, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    66 : Node(id: 66,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    61 : Node(id: 61, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
-    
-    
-    62 : Node(id: 62, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
-    
-    
-    63 : Node(id: 63, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
-    
-    
-    64 : Node(id: 64, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
-    
-    
-    65 : Node(id: 65, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
-    
-    
-    66 : Node(id: 66, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
-    
-    
-    67 : Node(id: 67, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    67 : Node(id: 67,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
     68 : Node(id: 68, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
@@ -334,8 +602,16 @@ let storyNodes: [Int : Node] = [
     87 : Node(id: 87, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
     
     
-    88 : Node(id: 88, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    88 : Node(id: 88,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
     
     
-    89 : Node(id: 89, paragraphs: [""], image: nil, edges: [Edge(destinationId: 0, prompt: "")]),
+    89 : Node(id: 89,
+              paragraphs: [""],
+              image: nil,
+              edges: [Edge(destinationId: 0,
+                           prompt: "")]),
 ]
