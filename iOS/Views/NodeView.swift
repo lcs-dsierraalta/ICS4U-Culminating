@@ -41,7 +41,7 @@ struct NodeView: View {
                             .padding(.horizontal)
                             .padding(.bottom)
                             .foregroundColor(.white)
-                            .font(.custom("Baskerville", size: 24))
+                            .font(.custom("CourierNewPS-BoltMT", size: 24))
                     }
                     
                     // Show the image if there is one
