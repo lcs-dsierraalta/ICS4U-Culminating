@@ -19,52 +19,65 @@ struct NodeView: View {
         
         ScrollView {
             
-            VStack(alignment: .leading) {
+            ZStack {
                 
-                // Page number
-                Text("\(node.id)")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding()
-                    .onTapGesture {
-                        activeNode = 0
+                LinearGradient(gradient: Gradient(colors: [.black, .black]), startPoint: .top, endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
+                
+                
+                
+                VStack(alignment: .leading) {
+                    
+                    // Page number
+                    Text("\(node.id)")
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .padding()
+                        .foregroundColor(.white)
+                        .onTapGesture {
+                            activeNode = 0
+                        }
+                    
+                    // Iterate over all the paragraphs
+                    ForEach(node.paragraphs, id: \.self) { currentParagraph in
+                        Text(currentParagraph)
+                            .padding(.horizontal)
+                            .padding(.bottom)
+                            .foregroundColor(.white)
+                            .font(.custom("Baskerville", size: 24))
                     }
-                
-                // Iterate over all the paragraphs
-                ForEach(node.paragraphs, id: \.self) { currentParagraph in
-                    Text(currentParagraph)
-                        .padding(.horizontal)
-                        .padding(.bottom)
-                        .font(.custom("Baskerville", size: 24))
-                }
-                
-                // Show the image if there is one
+                    
+                    // Show the image if there is one
 
-                if let image = node.image {
-                    Image(image)
-                        .resizable()
-                        .scaledToFit()
-                    }
+                    if let image = node.image {
+                        Image(image)
+                            .resizable()
+                            .scaledToFit()
+                        }
 
-                
-                // Show choices, when they exist
-                ForEach(node.edges, id: \.self) { currentEdge in
-                    HStack {
-                        Spacer()
-                        
-                        Text(try! AttributedString(markdown: currentEdge.prompt))
-                            .padding()
-                            .multilineTextAlignment(.trailing)
-                            .onTapGesture {
-                                // Advance to whatever node this prompt is for
-                                activeNode = currentEdge.destinationId
-                            }
+                    
+                    // Show choices, when they exist
+                    ForEach(node.edges, id: \.self) { currentEdge in
+                        HStack {
+                            Spacer()
                             
+                            Text(try! AttributedString(markdown: currentEdge.prompt))
+                                .padding()
+                                .foregroundColor(.white)
+                                .multilineTextAlignment(.trailing)
+                                .onTapGesture {
+                                    // Advance to whatever node this prompt is for
+                                    activeNode = currentEdge.destinationId
+                                }
+                                
+                        }
                     }
+                    
                 }
-                
             }
-        }
+            }
+            
+
         
     }
 }
