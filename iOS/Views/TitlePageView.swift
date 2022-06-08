@@ -37,10 +37,45 @@ struct TitlePageView: View {
         if gameIsOn == false {
             
             // Welcome screen
-            Text("Welcome!")
+            
+            ZStack {
+                
+                LinearGradient(gradient: Gradient(colors: [.purple, .green]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                   
+                    Text("THE BIG ESCAPE")
+                        .font(.largeTitle)
+                        .bold()
+                        .foregroundColor(.white)
+                        
+                    
+                    Text("You will try escaping a prison by \n making your own decisions")
+                        .font(.subheadline)
+                        .foregroundColor(.white)
+                        .bold()
+                        .multilineTextAlignment(.center)
+                        .padding(.bottom)
+                        
+                     Image("prison1")
+                        .resizable()
+                        .padding([.top, .leading, .trailing])
+                        .scaledToFit()
+                    
+                    
+                }
                 .onTapGesture {
                     startGame()
                 }
+                
+                
+                
+            }
+            
+            
+            
+            
         } else {
             
             // Game is being played
