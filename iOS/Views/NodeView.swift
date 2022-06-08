@@ -21,9 +21,8 @@ struct NodeView: View {
             
             ZStack {
                 
-                LinearGradient(gradient: Gradient(colors: [.black, .black]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
-                
+                Rectangle()
+                    .foregroundColor(.black)
                 
                 
                 VStack(alignment: .leading) {

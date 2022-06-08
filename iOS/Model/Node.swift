@@ -11,19 +11,62 @@ struct Node: Identifiable {
     let id: Int                       //The Node Id
     let paragraphs: [String]          //Models paragraph on one of the pages of the book
     let image: String?                //name of image, if there is one
-    let edges: [Edge]                  //A list of id's of nodes this node is connected to
+    let edges: [Edge]
+    let ending: Ending?
 }
 
 // An empty node
 let emptyNode = Node(id: 0,
                      paragraphs: [],
                      image: nil,
-                     edges: [])
+                     edges: [],
+                     ending: nil)
 
 struct Edge: Hashable {
     let destinationId: Int
     let prompt: String
 }
+
+enum EndingClassification: String, CaseIterable {
+    case great = "Great"
+    case favorable = "Favorable"
+    case mediocre = "Mediocre"
+    case disappointing = "Disappointing"
+    case catastrophic = "Catastrophic"
+}
+
+struct Ending {
+    let classification: EndingClassification
+    let description: String
+    var color: String {
+        switch self.classification {
+        case .great:
+            return "#90C8E0"  // Light blue
+        case .favorable:
+            return "#FFDE5F"  // Pale yellow
+        case .mediocre:
+            return "#D7883C"  // Orange
+        case .disappointing:
+            return "#C1531E"  // Deep orange
+        case .catastrophic:
+            return "#AB1800"  // Deep red
+        }
+    }
+}
+
+struct StoryInformation {
+    let title: String
+    let authorOrAuthors: String
+    let seriesInfo: String
+    let publisherInfo: String
+}
+
+let storyInfo = StoryInformation(title: "The Big Escape",
+                                 authorOrAuthors: "M.Asche, D. Sierraalta",
+                                 seriesInfo: "CHOOSE YOUR OWN ADVENTURE #1",
+                                 publisherInfo: "Big Stroies, Choosfield, Canada, 2022")
+
+
 
 let storyNodes: [Int : Node] = [
     
@@ -41,9 +84,10 @@ let storyNodes: [Int : Node] = [
                      Edge(destinationId: 3,
                           prompt: "*Accept meal*"),
                      Edge(destinationId: 10,
-                          prompt: "*Refuse meal*")]),
-    
-    
+                          prompt: "*Refuse meal*")],
+            ending: nil),
+
+
     2 : Node(id: 2,
              paragraphs: ["You committed to trying to escape because this may be the only chance you get.",
                           
@@ -52,9 +96,10 @@ let storyNodes: [Int : Node] = [
              edges: [Edge(destinationId: 4,
                           prompt: "*Tackle the guard*"),
                      Edge(destinationId: 5,
-                          prompt: "*Dash out of the cell*")]),
-    
-    
+                          prompt: "*Dash out of the cell*")],
+            ending: nil),
+
+
     3 : Node(id: 3,
              paragraphs: ["You decided to accept the meal instead of trying anything that could get you punished or killed, smart decision.",
                           
@@ -65,18 +110,20 @@ let storyNodes: [Int : Node] = [
              edges: [Edge(destinationId: 12,
                           prompt: "*Use the knife to attempt escape*"),
                      Edge(destinationId: 13,
-                          prompt: "*Fake death by eating the food*")]),
-    
-    
+                          prompt: "*Fake death by eating the food*")],
+            ending: nil),
+
+
     4 : Node(id: 4,
              paragraphs: ["Tackle the guard! You can take him right? He doesn't look that much bigger than you, except the fact that he's almost four inches taller than you, and he's bulky. You practiced karate when you were little, finally you can use it!",
                           
                           "You dash at the guard to try to push him... He won't budge. You try to punch him. He blocks. Flips you and kiss the ground."],
              image: nil,
              edges: [Edge(destinationId: 6,
-                          prompt: "Continue ->")]),
-    
-    
+                          prompt: "Continue ->")],
+            ending: nil),
+
+
     5 : Node(id: 5, paragraphs: ["This is your chance, you run out of the cell and close the door. The alarm sounds and soon guards begin swarming the hallway.",
                                  "You look right and there is 20 guards running at you.",
                                  
@@ -85,9 +132,10 @@ let storyNodes: [Int : Node] = [
              edges: [Edge(destinationId: 7,
                           prompt: "*Go left, play it safe*"),
                      Edge(destinationId: 8,
-                          prompt: "*Go right, take the guards on*")]),
-    
-    
+                          prompt: "*Go right, take the guards on*")],
+            ending: nil),
+
+
     6 : Node(id: 6,
              paragraphs: ["The smart option would be to give up, but your mother taught to never give up. You get back up and go in for another punch, but the guard pulls out the taser and tases you. He then proceeds to carry you out of the cell.",
                          
@@ -95,22 +143,25 @@ let storyNodes: [Int : Node] = [
                          
                         "Now you're beat up, in a more secure cell, and alone. How sad."],
              image: nil,
-             edges: [Edge(destinationId: 0, prompt: "The End.")]),
-    
-    
+             edges: [Edge(destinationId: 0, prompt: "The End.")],
+             ending: Ending(classification: .disappointing, description: "Solitary\\nconfinement")),
+
+
     7 : Node(id: 7, paragraphs: ["You don't feel like trying to fight the guards because you're weak since you skipped PE class, so you go left and try to take on the one guard, because one is better than 20, even you can handle that."],
              
              image: nil,
              edges: [Edge(destinationId: 9,
-                          prompt: "Continue ->")]),
-    
-    
+                          prompt: "Continue ->")],
+            ending: nil),
+
+
     8 : Node(id: 8, paragraphs: ["You feel confident and go head on against the 20 guards. Don't worry, I'll bring flowers to your funeral.",],
              image: nil,
              edges: [Edge(destinationId: 20,
-                          prompt: "Continue ->")]),
-    
-    
+                          prompt: "Continue ->")],
+            ending: nil),
+
+
     9 : Node(id: 9, paragraphs: ["As you're running towards the guard, you notice that his keys are dangling from his waist.",
                                  
                                  "You move quick and slam his head against the wall, that's gonna leave a mark.",
@@ -118,23 +169,26 @@ let storyNodes: [Int : Node] = [
                                  "You take his keys and baton and go through the doorway, but don't let your guard down, the guards are still following you."],
              image: nil,
              edges: [Edge(destinationId: 70,
-                          prompt: "Continue ->")]),
-    
-    
+                          prompt: "Continue ->")],
+            ending: nil),
+
+
     10 : Node(id: 10, paragraphs: ["You're not hungry and refuse the meal."],
               image: nil,
               edges: [Edge(destinationId: 11,
-                           prompt: "Continue ->")]),
-    
-    
+                           prompt: "Continue ->")],
+             ending: nil),
+
+
     11 : Node(id: 11, paragraphs: ["The guard leaves the food anyways because he's nice. Maybe you should eat it.",
                                    
                                    "You're too stubborn so you don't eat. So you die from starvation... Lame."],
               image: nil,
               edges: [Edge(destinationId: 0,
-                           prompt: "The End.")]),
-    
-    
+                           prompt: "The End.")],
+              ending: Ending(classification: .disappointing, description: "Starvation")),
+
+
     12 : Node(id: 12, paragraphs: ["You decide to use the knife.",
                                    
                                    "You wait for the guard to leave.",
@@ -144,17 +198,19 @@ let storyNodes: [Int : Node] = [
               edges: [Edge(destinationId: 14,
                            prompt: "*Kill the woman in your cell*"),
                       Edge(destinationId: 21,
-                           prompt: "*Wait longer to think of an idea*")]),
-    
-    
+                           prompt: "*Wait longer to think of an idea*")],
+             ending: nil),
+
+
     13 : Node(id: 13, paragraphs: ["You pretend that you're starving and immediately start devouring your food.",
                                   
                                    "This is the perfect oppotunity to fake your death. You pretend that you're choking and fall to the ground, this alarms the guards."],
               image: nil,
               edges: [Edge(destinationId: 22,
-                           prompt: "Continue ->")]),
-    
-    
+                           prompt: "Continue ->")],
+             ending: nil),
+
+
     14 : Node(id: 14, paragraphs: ["After the guard leaves, you grab the knife and stab the woman",
                                   
                                   "She's shocked and sad, but you pay no mind to her feelings",
@@ -163,22 +219,25 @@ let storyNodes: [Int : Node] = [
               image: nil,
               edges: [Edge(destinationId: 15,
                            prompt: "*Call the guards*"),
-              Edge(destinationId: 16, prompt: "*Play dead*")]),
-    
-    
+              Edge(destinationId: 16, prompt: "*Play dead*")],
+             ending: nil),
+
+
     15 : Node(id: 15, paragraphs: ["You scream and start panicking, shouting at the guards to get over. You curl up in a ball and start rolling around ot make it seem like you witnessed something traumatizing."],
               image: nil,
               edges: [Edge(destinationId: 18,
-                           prompt: "Continue ->")]),
-    
-    
+                           prompt: "Continue ->")],
+             ending: nil),
+
+
     16 : Node(id: 16,
               paragraphs: ["With your amazing quick thinking, you splash the woman's blood all over you and pretend that she killed you before 'commiting suicide'."],
               image: nil,
               edges: [Edge(destinationId: 17,
-                           prompt: "Continue ->")]),
-    
-    
+                           prompt: "Continue ->")],
+             ending: nil),
+
+
     17 : Node(id: 17,
               paragraphs: ["The guard hasn't heard any commotion from your cell for a while, so he goes to check on you.",
                           
@@ -189,7 +248,8 @@ let storyNodes: [Int : Node] = [
                           "You're done for. The guards find you guilty for murdering the woman and setence you to death... Too bad."],
               image: nil,
               edges: [Edge(destinationId: 0,
-                           prompt: "The End.")]),
+                           prompt: "The End.")],
+              ending: Ending(classification: .catastrophic, description: "Death")),
     
     
     18 : Node(id: 18,
