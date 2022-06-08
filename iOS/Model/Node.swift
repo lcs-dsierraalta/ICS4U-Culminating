@@ -806,7 +806,8 @@ let storyNodes: [Int : Node] = [
               paragraphs: [""],
               image: nil,
               edges: [Edge(destinationId: 0,
-                           prompt: "")]),
+                           prompt: "")],
+              ending: nil),
     
     
     85 : Node(id: 85,
