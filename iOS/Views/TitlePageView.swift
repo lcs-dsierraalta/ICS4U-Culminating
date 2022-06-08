@@ -82,6 +82,7 @@ struct TitlePageView: View {
             // Show the node
             NodeView(node: currentNode,
                      activeNode: $activeNode)
+            .ignoresSafeArea()
         }
     }
     

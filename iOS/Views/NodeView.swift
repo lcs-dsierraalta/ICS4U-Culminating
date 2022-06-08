@@ -21,8 +21,6 @@ struct NodeView: View {
             
             ZStack {
                 
-                Rectangle()
-                    .foregroundColor(.black)
                 
                 
                 VStack(alignment: .leading) {
@@ -75,6 +73,13 @@ struct NodeView: View {
                 }
             }
             }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Rectangle()
+                .foregroundColor(.black)
+                .ignoresSafeArea(.all)
+            
+        )
             
 
         

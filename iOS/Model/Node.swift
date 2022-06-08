@@ -186,7 +186,7 @@ let storyNodes: [Int : Node] = [
               image: nil,
               edges: [Edge(destinationId: 0,
                            prompt: "The End.")],
-              ending: Ending(classification: .disappointing, description: "Starvation")),
+              ending: Ending(classification: .disappointing, description: "Death by \\nStarvation")),
 
 
     12 : Node(id: 12, paragraphs: ["You decide to use the knife.",
@@ -245,11 +245,11 @@ let storyNodes: [Int : Node] = [
                            
                            "He then starts checking your pulse to see if you're alive. Fatal mistake, you dind't think about that, now the guard knows you're alive.",
                            
-                           "You're done for. The guards find you guilty for murdering the woman and setence you to death... Too bad."],
+                           "You're done for. The guards find you guilty for murdering the woman and sentence you to death... Too bad."],
               image: nil,
               edges: [Edge(destinationId: 0,
                            prompt: "The End.")],
-              ending: Ending(classification: .catastrophic, description: "Death")),
+              ending: Ending(classification: .catastrophic, description: "Sentenced \\nto Death")),
     
     
     18 : Node(id: 18,
