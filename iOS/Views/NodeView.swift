@@ -72,15 +72,16 @@ struct NodeView: View {
                     
                 }
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(
+                Rectangle()
+                    .foregroundColor(.black)
+                    .ignoresSafeArea(.all)
+                
+            )
+
             }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(
-            Rectangle()
-                .foregroundColor(.black)
-                .ignoresSafeArea(.all)
-            
-        )
-            
+                    
 
         
     }

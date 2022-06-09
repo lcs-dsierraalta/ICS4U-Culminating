@@ -49,6 +49,9 @@ struct TitlePageView: View {
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.white)
+                        .padding()
+                    
+                    
                         
                     
                     Text("You will try escaping a prison by \n making your own decisions")
@@ -57,11 +60,14 @@ struct TitlePageView: View {
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
-                        
+                     
+                    
+                    
                      Image("prison1")
                         .resizable()
-                        .padding([.top, .leading, .trailing])
+                        .padding(.all)
                         .scaledToFit()
+                    
                     
                     
                 }
