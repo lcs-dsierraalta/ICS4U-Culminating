@@ -25,6 +25,8 @@ struct NodeView: View {
                 
                 VStack(alignment: .leading) {
                     
+                    Spacer(minLength: .maximum(50, 10))
+                    
                     // Page number
                     Text("\(node.id)")
                         .font(.largeTitle)
@@ -45,13 +47,13 @@ struct NodeView: View {
                     }
                     
                     // Show the image if there is one
-
+                    
                     if let image = node.image {
                         Image(image)
                             .resizable()
                             .scaledToFit()
-                        }
-
+                    }
+                    
                     
                     // Show choices, when they exist
                     ForEach(node.edges, id: \.self) { currentEdge in
@@ -66,23 +68,24 @@ struct NodeView: View {
                                     // Advance to whatever node this prompt is for
                                     activeNode = currentEdge.destinationId
                                 }
-                                
+                            
                         }
                     }
                     
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                Rectangle()
-                    .foregroundColor(.black)
-                    .ignoresSafeArea(.all)
-                
-            )
-
-            }
-                    
-
+            
+            
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Rectangle()
+                .foregroundColor(.black)
+                .ignoresSafeArea(.all)
+            
+        )
+        
+        
         
     }
 }
