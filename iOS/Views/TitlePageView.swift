@@ -40,7 +40,7 @@ struct TitlePageView: View {
             
             ZStack {
                 
-                LinearGradient(gradient: Gradient(colors: [.purple, .green]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                LinearGradient(gradient: Gradient(colors: [.yellow, .purple]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
                 
                 VStack {
