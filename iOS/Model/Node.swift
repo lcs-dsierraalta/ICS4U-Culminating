@@ -663,14 +663,15 @@ let storyNodes: [Int : Node] = [
     
     
     73 : Node(id: 73,
-              paragraphs: [""],
+              paragraphs: ["You choose to walk up to the glowy thing. Very smart."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")]),
+              edges: [Edge(destinationId: 74,
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     74 : Node(id: 74,
-              paragraphs: [""],
+              paragraphs: ["As you get close, the glowy thing starts to take shape. It looks like a ball. You grab it"],
               image: nil,
               edges: [Edge(destinationId: 0,
                            prompt: "")]),
