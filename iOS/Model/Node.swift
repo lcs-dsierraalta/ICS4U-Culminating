@@ -689,7 +689,7 @@ let storyNodes: [Int : Node] = [
               image: nil,
               edges: [Edge(destinationId: 71,
                            prompt: "Continue ->")],
-              ending: nil),
+             ending: nil),
     
     
     71 : Node(id: 71,
@@ -703,29 +703,29 @@ let storyNodes: [Int : Node] = [
                            prompt: "*Check out the machine*"),
                       Edge(destinationId: 73,
                            prompt: "*Check out the glowy thing*")],
-              ending: nil),
-    
+             ending: nil),
+   
     
     72 : Node(id: 72,
-              paragraphs: [""],
+              paragraphs: ["You choose to mess with the machine. Right now it's displaying a lot of random code you don't understand."],
               image: nil,
               edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     73 : Node(id: 73,
-              paragraphs: [""],
+              paragraphs: ["You choose to walk up to the glowy thing. Very smart."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+              edges: [Edge(destinationId: 74,
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     74 : Node(id: 74,
-              paragraphs: [""],
+              paragraphs: ["As you get close, the glowy thing starts to take shape. It looks like a ball. You grab it"],
               image: nil,
-              edges: [Edge(destinationId: 0,
+              edges: [Edge(destinationId: 84,
                            prompt: "")],
               ending: nil),
     
@@ -803,49 +803,57 @@ let storyNodes: [Int : Node] = [
     
     
     84 : Node(id: 84,
-              paragraphs: [""],
+              paragraphs: ["You begin tapping buttons to see if something happens. Maybe you can acquire a weapon that will help you escape.",
+                          
+                          "After tampering with the machine for a bit a capsule opens. This capsule is big enough to fit a person."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+              edges: [Edge(destinationId: 85,
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     85 : Node(id: 85,
-              paragraphs: [""],
+              paragraphs: ["As anyone with a brain would do, you setp inside the capsule. There's a big panel in the middle that asks to input a date. You put today's date."],
               image: nil,
-              edges: [Edge(destinationId: 0,
+              edges: [Edge(destinationId: 86,
                            prompt: "")],
-              ending: nil),
+             ending: nil),
     
     
     86 : Node(id: 86,
-              paragraphs: [""],
+              paragraphs: ["You enter today's date and the machine starts making a very loud noise, like it's starting up. The a big bright red button lights up. You want to press it very badly, but then you hear a loud knock on the door. It looks like the noise was loud enough that the guards heard it. You're about to get busted"],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+              edges: [Edge(destinationId: 87,
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     87 : Node(id: 87,
-              paragraphs: [""],
+              paragraphs: ["The slams get louder and and louder, in your panick, you trip and bang your head against the side of the capsule. This causes the capsule door to close. You are now locked in."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+              edges: [Edge(destinationId: 88,
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     88 : Node(id: 88,
-              paragraphs: [""],
+              paragraphs: ["The guards then open the door and surround the capsule. You want to cry.",
+                          
+                          "They warn you that if you don't leave the capsule they'll shoot you... This is not a great situation."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+              edges: [Edge(destinationId: 89,
+                           prompt: "Continue ->")],
+             ending: nil),
     
     
     89 : Node(id: 89,
-              paragraphs: [""],
+              paragraphs: ["You try to explain that you're stuck in the capsule, but they won't listen. Shorty after they shoot the capsule. This surprised you and caused you fall back a bit and you ended up pressing the big red button.",
+                          
+                          "The machine starts making werid noises, electricity all around it. The guards then fire more shots at the capsule. It looks like capsule is bullet proof, that's good. However one of the bullets hits a cable and everything begins to spark.",
+                          
+                          "Then a bright light starts glowing, it's blinding and you can't see anyting. You pee your pants and start screaming, then everything goes white..."],
               image: nil,
-              edges: [Edge(destinationId: 0,
-                           prompt: "")],
-              ending: nil),
+              edges: [Edge(destinationId: 1,
+                           prompt: "Continue?")],
+             ending: nil),
 ]
