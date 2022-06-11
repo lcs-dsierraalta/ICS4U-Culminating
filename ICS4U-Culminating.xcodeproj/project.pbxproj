@@ -38,7 +38,8 @@
 		CD05BDD9283E6DC500E4E5D5 /* Input.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Input.txt; sourceTree = "<group>"; };
 		CD05BDDA283E6EC000E4E5D5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		CD81341428451BE40007D211 /* TitlePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePageView.swift; sourceTree = "<group>"; };
-		CDBE29AD28542BFB005F6AD3 /* BuildingDirectedGraph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = BuildingDirectedGraph.playground; path = ../BuildingDirectedGraph.playground; sourceTree = "<group>"; };
+		CDBE29AE28542E96005F6AD3 /* output.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = output.pdf; path = ../../../Desktop/output.pdf; sourceTree = "<group>"; };
+		CDBE29AF28542EC9005F6AD3 /* BuildingDirectedGraph.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = BuildingDirectedGraph.playground; path = ../BuildingDirectedGraph.playground; sourceTree = "<group>"; };
 		CDEE59A12847AD2B001BF6E1 /* iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDEE59A32847AD2B001BF6E1 /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
 		CDEE59A72847AD2C001BF6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,7 +67,8 @@
 		CD05BDC4283E6AA800E4E5D5 = {
 			isa = PBXGroup;
 			children = (
-				CDBE29AD28542BFB005F6AD3 /* BuildingDirectedGraph.playground */,
+				CDBE29AF28542EC9005F6AD3 /* BuildingDirectedGraph.playground */,
+				CDBE29AE28542E96005F6AD3 /* output.pdf */,
 				CD05BDCF283E6AA800E4E5D5 /* ICS4U-Culminating */,
 				CDEE59A22847AD2B001BF6E1 /* iOS */,
 				CD05BDCE283E6AA800E4E5D5 /* Products */,
