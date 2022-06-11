@@ -40,7 +40,7 @@ struct TitlePageView: View {
             
             ZStack {
                 
-                LinearGradient(gradient: Gradient(colors: [.purple, .green]), startPoint: .topTrailing, endPoint: .bottomLeading)
+                LinearGradient(gradient: Gradient(colors: [.yellow, .purple]), startPoint: .top, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
                 
                 VStack {
@@ -49,6 +49,9 @@ struct TitlePageView: View {
                         .font(.largeTitle)
                         .bold()
                         .foregroundColor(.white)
+                        .padding()
+                    
+                    
                         
                     
                     Text("You will try escaping a prison by \n making your own decisions")
@@ -57,11 +60,14 @@ struct TitlePageView: View {
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
-                        
+                     
+                    
+                    
                      Image("prison1")
                         .resizable()
-                        .padding([.top, .leading, .trailing])
+                        .padding(.all)
                         .scaledToFit()
+                    
                     
                     
                 }
@@ -82,6 +88,7 @@ struct TitlePageView: View {
             // Show the node
             NodeView(node: currentNode,
                      activeNode: $activeNode)
+            .ignoresSafeArea()
         }
     }
     

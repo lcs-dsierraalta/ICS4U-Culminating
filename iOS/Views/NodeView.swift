@@ -21,11 +21,11 @@ struct NodeView: View {
             
             ZStack {
                 
-                Rectangle()
-                    .foregroundColor(.black)
                 
                 
                 VStack(alignment: .leading) {
+                    
+                    Spacer(minLength: .maximum(50, 10))
                     
                     // Page number
                     Text("\(node.id)")
@@ -43,17 +43,17 @@ struct NodeView: View {
                             .padding(.horizontal)
                             .padding(.bottom)
                             .foregroundColor(.white)
-                            .font(.custom("Baskerville", size: 24))
+                            .font(.custom("CourierNewPS-BoltMT", size: 24))
                     }
                     
                     // Show the image if there is one
-
+                    
                     if let image = node.image {
                         Image(image)
                             .resizable()
                             .scaledToFit()
-                        }
-
+                    }
+                    
                     
                     // Show choices, when they exist
                     ForEach(node.edges, id: \.self) { currentEdge in
@@ -68,15 +68,24 @@ struct NodeView: View {
                                     // Advance to whatever node this prompt is for
                                     activeNode = currentEdge.destinationId
                                 }
-                                
+                            
                         }
                     }
                     
                 }
             }
-            }
             
-
+            
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(
+            Rectangle()
+                .foregroundColor(.black)
+                .ignoresSafeArea(.all)
+            
+        )
+        
+        
         
     }
 }
