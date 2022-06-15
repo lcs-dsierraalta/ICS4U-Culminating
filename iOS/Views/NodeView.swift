@@ -13,6 +13,7 @@ struct NodeView: View {
     // MARK: Stored properties
     let node: Node
     @Binding var activeNode: Int
+    @Binding var endCount: Int
     
     // MARK: Computed properties
     var body: some View {
@@ -55,6 +56,8 @@ struct NodeView: View {
                     }
                     
                     
+                    
+                    
                     // Show choices, when they exist
                     ForEach(node.edges, id: \.self) { currentEdge in
                         HStack {
@@ -67,6 +70,13 @@ struct NodeView: View {
                                 .onTapGesture {
                                     // Advance to whatever node this prompt is for
                                     activeNode = currentEdge.destinationId
+                                    
+                                    if node.ending != nil {
+                                        endCount += 1
+                                    }
+                                    
+                                    //add something that changes a number and make it track that
+                                    // if destinationId = 0 change something to 2, if destionationId > 0 change the number to 1 which makes you able to track it later 
                                 }
                             
                         }

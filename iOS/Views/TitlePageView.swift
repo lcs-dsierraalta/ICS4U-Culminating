@@ -14,6 +14,8 @@ struct TitlePageView: View {
     // What page are we on
     @State var activeNode = 0
     
+    // Ending Counter
+    @State var endCount = 0
     
     // MARK: Computed properties (tell us things or show us things)
     
@@ -41,10 +43,10 @@ struct TitlePageView: View {
             ZStack {
                 
                 LinearGradient(gradient: Gradient(colors: [.yellow, .purple]), startPoint: .top, endPoint: .bottom)
-                .edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                   
+                    
                     Text("THE BIG ESCAPE")
                         .font(.largeTitle)
                         .bold()
@@ -52,7 +54,7 @@ struct TitlePageView: View {
                         .padding()
                     
                     
-                        
+                    
                     
                     Text("You will try escaping a prison by \n making your own decisions")
                         .font(.subheadline)
@@ -60,17 +62,45 @@ struct TitlePageView: View {
                         .bold()
                         .multilineTextAlignment(.center)
                         .padding(.bottom)
-                     
                     
                     
-                     Image("prison1")
+                    
+                    Image("prison1")
                         .resizable()
                         .padding(.all)
                         .scaledToFit()
                     
                     
-                    
-                }
+                    if endCount == 0 {
+                        
+                        Text("\(endCount) endings discovered out of 12")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .bold()
+                            .multilineTextAlignment(.center)
+                            .padding(.bottom)
+                    } else if  endCount == 1 {
+                        
+                        Text("\(endCount) ending discovered out of 12")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .bold()
+                            .multilineTextAlignment(.center)
+                            .padding(.bottom)
+                    } else if endCount >= 2  {
+                        
+                        Text("\(endCount) endings discovered out of 12")
+                            .font(.subheadline)
+                            .foregroundColor(.white)
+                            .bold()
+                            .multilineTextAlignment(.center)
+                            .padding(.bottom)
+                        
+                        
+                        
+                        
+                        
+                    }}
                 .onTapGesture {
                     startGame()
                 }
@@ -87,13 +117,13 @@ struct TitlePageView: View {
             // Game is being played
             // Show the node
             NodeView(node: currentNode,
-                     activeNode: $activeNode)
+                     activeNode: $activeNode, endCount: $endCount)
             .ignoresSafeArea()
         }
     }
     
     // MARK: Functions (Do things)
-
+    
     func startGame() {
         // NOTE: We can set this to whatever we want for debugging later on
         activeNode = 1
